@@ -1,5 +1,8 @@
 import styled from "styled-components";
 
+import Hero from "../components/Hero";
+import MovieCard from "../components/MovieCard";
+
 
 const Container = styled.div`
     padding: 24px;
@@ -42,9 +45,34 @@ const Card = styled.div`
     }
 `;
 
+
+
+const movies = [
+  {
+    id: 1,
+    title: "Interstellar",
+    poster: "https://image.tmdb.org/t/p/w500/your-image.jpg",
+  },
+  {
+    id: 2,
+    title: "Inception",
+    poster: "https://image.tmdb.org/t/p/w500/your-image.jpg",
+  },
+  {
+    id: 3,
+    title: "Batman",
+    poster: "https://image.tmdb.org/t/p/w500/your-image.jpg",
+  },
+]
+
+
+
+
 export default function Home() {
     return(
         <Container>
+            <Hero />
+
             <Section>
                 <Title>Trending</Title>
                 <Row>
@@ -59,10 +87,9 @@ export default function Home() {
             <Section>
                 <Title>Movies</Title>
                 <Row>
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
+                    {movies.map((movie) => (
+                        <MovieCard key={movie.id} movie={movie} />
+                    ))}
                 </Row>
             </Section>
 
