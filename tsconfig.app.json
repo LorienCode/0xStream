@@ -23,6 +23,6 @@
   },
   "include": ["src"],
   "files": [
-    "src/stylesTstyled.d.ts"
+    "src/styles/styled.d.ts"
   ]
 }
