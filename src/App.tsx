@@ -6,7 +6,7 @@ import { theme } from './styles/theme';
 
 import MainLayout from './layouts/MainLayout';
 
-function Home() { return( <h2>Home</h2> ) }
+import Home from './pages/Home';
 
 
 function App() {

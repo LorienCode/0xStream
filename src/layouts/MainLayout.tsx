@@ -17,6 +17,7 @@ const Main = styled.main`
 
 export default function MainLayout() {
     return (
+
         <Container>
             <Navbar />
 
