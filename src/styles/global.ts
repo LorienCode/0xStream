@@ -10,8 +10,8 @@ export const GlobalStyle = createGlobalStyle`
  }
 
  body {
-     font-family: Arial, Helvetica, sans-serif;
-     background-color: #333335;
-     color: #FFF;
+     font-family: ${({ theme }) => theme.typography.font};
+     background-color: ${({theme}) => theme.colors.body};
+     color: ${({theme}) => theme.colors.paragraph};
  }
 `;
