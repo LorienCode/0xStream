@@ -12,7 +12,7 @@ const Container = styled.div`
 
 
 const Main = styled.main`
-    flex: 1px;
+    flex: 1;
 `;
 
 export default function MainLayout() {
